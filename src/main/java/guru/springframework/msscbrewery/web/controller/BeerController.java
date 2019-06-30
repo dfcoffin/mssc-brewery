@@ -13,6 +13,7 @@ import java.util.UUID;
  * Created by Donald F. Coffin on 06/29/2019 at 12:48
  */
 
+@Deprecated
 @RequestMapping("/api/v1/beer")
 @RestController
 public class BeerController {
@@ -52,7 +53,6 @@ public class BeerController {
     @DeleteMapping({"/{beerId}"})
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteBeer(@PathVariable("beerId") UUID beerId) {
-
         beerService.deleteById(beerId);
     }
 }

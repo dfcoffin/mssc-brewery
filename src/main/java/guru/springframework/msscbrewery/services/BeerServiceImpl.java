@@ -10,6 +10,7 @@ import java.util.UUID;
  * Created by Donald F. Coffin on 06/29/2019 at 13:03
  */
 
+@Deprecated
 @Slf4j
 @Service
 public class BeerServiceImpl implements BeerService {

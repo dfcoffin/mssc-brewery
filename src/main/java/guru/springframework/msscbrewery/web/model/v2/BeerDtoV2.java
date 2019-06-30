@@ -1,4 +1,4 @@
-package guru.springframework.msscbrewery.web.model;
+package guru.springframework.msscbrewery.web.model.v2;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,18 +8,17 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 /**
- * Created by Donald F. Coffin on 06/29/2019 at 12:40
+ * Created by Donald F. Coffin on 06/30/2019 at 00:14
  */
 
-@Deprecated
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
+public class BeerDtoV2 {
 
     private UUID id;
     private String beerName;
-    private String beerStyle;
+    private BeerStyleEnum beerStyle;
     private Long upc;
 }
